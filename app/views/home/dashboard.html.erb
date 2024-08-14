@@ -1,3 +1,17 @@
-
-<h1>Welcome to organizaztion</h1>
+<h1>Welcome to Our Organization</h1>
 <p>Organization: <%= @organization.name %></p>
+
+<%= link_to 'Upload Post', new_post_path, class: 'btn btn-primary' %>
+
+<ul>
+  <% if @posts.present? %>
+    <% @posts.each do |post| %>
+      <li>
+        <strong><%= post.title %></strong>
+        <p><%= post.description %></p>
+      </li>
+    <% end %>
+  <% else %>
+    <li>No posts available.</li>
+  <% end %>
+</ul>
