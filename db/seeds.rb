@@ -10,5 +10,8 @@
 Organization.create([
   { name: 'Amazon' },
   { name: 'Flipkart' },
-  { name: 'Myntra' }
+  { name: 'Myntra' },
+  { name: 'Daraz' },
+  { name: 'Alibaba' }
+
 ])

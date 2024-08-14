@@ -1,10 +1,8 @@
-# frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
   before_action :load_org, only: [:new, :create]
   before_action :check_organization, only: :create
-
 
   private
 
@@ -24,6 +22,7 @@ class Users::SessionsController < Devise::SessionsController
       redirect_to new_user_session_path and return
     end
   end
+
 
   # GET /resource/sign_in
   # def new
