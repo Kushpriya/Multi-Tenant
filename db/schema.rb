@@ -32,7 +32,6 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_14_100841) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "organization_id", null: false
-    t.integer "organization"
     t.integer "user_id", null: false
     t.index ["organization_id"], name: "index_posts_on_organization_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
@@ -53,6 +52,5 @@ ActiveRecord::Schema[7.2].define(version: 2024_08_14_100841) do
 
   add_foreign_key "memberships", "organizations"
   add_foreign_key "memberships", "users"
-  add_foreign_key "posts", "organizations"
   add_foreign_key "posts", "users"
 end
