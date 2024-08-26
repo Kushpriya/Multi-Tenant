@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  if Rails.env.development?
+    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
+  end
+  post "/graphql", to: "graphql#execute"
   resources :posts
   devise_for :users, controllers: { registrations: 'users/registrations',sessions:'users/sessions' }
 
@@ -11,4 +15,5 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   root "home#index"
+  get 'home/contact'
 end

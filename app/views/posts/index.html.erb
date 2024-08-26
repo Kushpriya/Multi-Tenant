@@ -1,15 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
+<%= stylesheet_link_tag("post") %>
 <% content_for :title, "Posts" %>
 
 <h1>Posts</h1>
 
-<div id="posts">
+<div id="posts" class="homepage">
   <% @posts.each do |post| %>
     <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+ 
   <% end %>
 </div>
 

@@ -8,4 +8,6 @@ class HomeController < ApplicationController
     @organization = current_user.organization
     @posts = @organization.posts
   end
+  def contact
+  end
 end

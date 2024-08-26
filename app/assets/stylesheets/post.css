@@ -1,0 +1,29 @@
+
+.post-container {
+  align-items: center;
+  text-align: start;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  width: 450px;
+
+}
+
+.post-link {
+  
+  text-align: center;
+margin-left: 100px;
+font-size: 20px;
+text-decoration: underline;
+}
+
+.homepage {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
