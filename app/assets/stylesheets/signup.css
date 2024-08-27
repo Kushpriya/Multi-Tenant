@@ -25,7 +25,7 @@
   }
   
   .field {
-    margin-bottom: 20px; /* Increased margin for better spacing */
+    margin-bottom: 20px; 
     position: relative;
   }
   
@@ -38,7 +38,7 @@
   }
   
   label i {
-    margin-right: 10px; 
+    margin-right: 5px; 
     color: grey;
     font-size: 20px;
   }

@@ -1,13 +1,15 @@
 /* login.css */
 
   
-  .form-wrapper {
+  .login-wrapper {
     background: rgb(236, 236, 236);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     max-width: 400px;
     width: 100%;
+    margin:50px auto;
+    
   }
   
   h2 {
